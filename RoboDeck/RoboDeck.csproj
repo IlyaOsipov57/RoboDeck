@@ -48,40 +48,39 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ButtonDrawing.cs" />
-    <Compile Include="Card.cs" />
-    <Compile Include="CardDrawing.cs" />
+    <Compile Include="Drawing\ButtonDrawing.cs" />
+    <Compile Include="Data\Card.cs" />
+    <Compile Include="Drawing\CardDrawing.cs" />
     <Compile Include="CardEditor.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="CardEditor.Designer.cs">
       <DependentUpon>CardEditor.cs</DependentUpon>
     </Compile>
-    <Compile Include="Deck.cs" />
-    <Compile Include="DeckDrawing.cs" />
-    <Compile Include="FloatPoint.cs" />
+    <Compile Include="Data\Deck.cs" />
+    <Compile Include="Drawing\DeckDrawing.cs" />
+    <Compile Include="Data\FloatPoint.cs" />
     <Compile Include="GameForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="GameForm.Designer.cs">
       <DependentUpon>GameForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="LoaderButtonsDrawer.cs" />
-    <Compile Include="MetaState.cs" />
-    <Compile Include="RoboMarkerDrawer.cs" />
-    <Compile Include="ToDo.cs" />
-    <Compile Include="Glyphs.cs" />
-    <Compile Include="IntPoint.cs" />
-    <Compile Include="PenCache.cs" />
+    <Compile Include="Drawing\LoaderButtonsDrawer.cs" />
+    <Compile Include="Data\MetaState.cs" />
+    <Compile Include="Drawing\RoboMarkerDrawer.cs" />
+    <Compile Include="Drawing\Glyphs.cs" />
+    <Compile Include="Data\IntPoint.cs" />
+    <Compile Include="Drawing\PenCache.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="DrawingParameters.cs" />
+    <Compile Include="Drawing\DrawingParameters.cs" />
     <Compile Include="Loader.cs" />
-    <Compile Include="Stage.cs" />
-    <Compile Include="StageDrawing.cs" />
+    <Compile Include="Data\Stage.cs" />
+    <Compile Include="Drawing\StageDrawing.cs" />
     <Compile Include="StateUpdater.cs" />
-    <Compile Include="Timeline.cs" />
-    <Compile Include="TimelineDrawing.cs" />
+    <Compile Include="Data\Timeline.cs" />
+    <Compile Include="Drawing\TimelineDrawing.cs" />
     <EmbeddedResource Include="CardEditor.resx">
       <DependentUpon>CardEditor.cs</DependentUpon>
     </EmbeddedResource>
@@ -98,7 +97,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <None Include="Manual.pdf">
+    <None Include="Help\Manual.pdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="Properties\Settings.settings">
@@ -110,7 +109,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="Инструкция.pdf">
+    <None Include="Help\Инструкция.pdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>
@@ -165,6 +164,7 @@
     </Content>
     <Content Include="Play.ico" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
